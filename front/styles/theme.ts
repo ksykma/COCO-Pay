@@ -23,7 +23,7 @@ const shadow = {
   shadow1: "0px 12px 30px rgba(0, 0, 0, 0.16)",
 } as const;
 
-// TODO: 여기
+// TODO: 여기 !
 const gradient = {
   // figma developer mode
 };
