@@ -4,7 +4,7 @@ import { Text } from "@/components/atoms/Text/Text.styles";
 import cardImg1 from "@/assets/images/img-card1.png";
 import korImg from "@/assets/images/img-kor.png";
 import iconHamburgerGrey from "@/assets/images/icon-hamburger-grey.png";
-import { CardItemWrapper, Hr } from "./CardItem.styles";
+import { CardItemWrapper, Hr, CardListBar } from "./CardItem.styles";
 import { Wrapper } from "@/components/atoms/Wrapper/Wrapper.styles";
 
 const CardItem = () => {
@@ -18,10 +18,10 @@ const CardItem = () => {
           height={16}
           $unit="px"
           $margin="0 8px 0 0"
-          style={{ margin: "8px 0 8px 12px" }}
+          style={{ margin: "4px 0 8px 12px" }}
         ></Image>
-        <Wrapper $padding="0 0 0 8px">
-          <CardItemWrapper $margin="0 0 8px 0">
+        <Wrapper $padding="0 0 0 8px" $alignItems="start" $justifyContent="space-around">
+          <CardItemWrapper>
             <Text size="small2" fontWeight="regular" color="black1">
               위버스 신한카드 체크(BTS)
             </Text>
@@ -39,8 +39,21 @@ const CardItem = () => {
               3571-89**-****-4485
             </Text>
           </CardItemWrapper>
+          <div style={{position: 'relative', width: '90%'}}>
+            <CardListBar
+            width="90%"
+            $bgc="grey4"
+            >
+            </CardListBar>
+            <CardListBar
+            width="30%"
+            $bgc="blue"
+            $isAbsolute={true}
+            >
+            </CardListBar>
+          </div>
         </Wrapper>
-        <CardItemWrapper $alignItems="center" $padding="0 0 0 8px">
+        <CardItemWrapper $alignItems="center">
           <Image
             src={iconHamburgerGrey}
             width={16}
