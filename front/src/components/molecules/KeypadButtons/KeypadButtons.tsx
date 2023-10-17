@@ -38,7 +38,7 @@ const KeypadButtons = (props: KeypadButtonsProps) => {
   const keypad = [1, 2, 3, 4, 5, 6, 7, 8, 9, "", 0, "back"];
 
   useEffect(() => {
-    console.log(userInfo.password); // userInfo가 업데이트될 때마다 출력됩니다.
+    // userInfo가 업데이트될 때마다 출력됩니다.
     if (userInfo.password) {
       // password가 유효한 값이면 (설정되었다면)
       addUserMutation.mutate(userInfo);
@@ -79,11 +79,9 @@ const KeypadButtons = (props: KeypadButtonsProps) => {
       if (step === 1) {
         // 첫 번째 단계: 비밀번호 설정
         setSetPassword(enteredPassword);
-        console.log("setSetPassword", setPassword, enteredPassword, "step 1");
         setStep(2); // 다음 단계로 전환
       } else if (step === 2) {
         if (setPassword === enteredPassword) {
-          console.log("step2: 비밀번호 왕왕 일치");
           handlePutPassword(enteredPassword);
           navigatePage(PATH.FIGNER_SETTING);
         } else {

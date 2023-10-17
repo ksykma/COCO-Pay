@@ -39,7 +39,6 @@ const StatisticsPage = () => {
   const date = new Date();
   const [month, setMonth] = useState(date.getMonth() + 1);
   const StatisticDiscount = useGetStatisticDiscount(month);
-  console.log(StatisticDiscount)
   const StatisticConsume = useGetStatisticConsume(month);
 
   // 버튼 클릭에 따른 달 변경

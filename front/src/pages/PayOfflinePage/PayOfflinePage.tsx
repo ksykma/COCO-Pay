@@ -49,7 +49,6 @@ function PayOfflinePage() {
     transform-origin: center;
   `;
 
-  console.log(CardList, "나의 카드들"); //TODO: 카드리스트 있는지 확인
   const firstThreeCards = CardList.slice(0, 3);
   return (
     <Background

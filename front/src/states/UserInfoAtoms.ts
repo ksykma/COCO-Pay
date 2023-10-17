@@ -19,7 +19,8 @@ export const priorityAtom = atom({
   default: "priority"
 })
 
+const priorityLocalStorage = localStorage.getItem("priority");
 export const myPagePriorityAtom = atom({
   key: "myPagePriorityAtom",
-  default: 2
+  default: priorityLocalStorage ? parseInt(priorityLocalStorage, 10) : 1
 })

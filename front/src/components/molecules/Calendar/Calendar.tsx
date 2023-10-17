@@ -23,7 +23,6 @@ type CalendarProps = {
     const [isModalOpen, setModalOpen] = useState(false);
     const keypad = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월','10월', '11월', '12월'];
     const [selectedMonth, setSelectedMonth] = useState("");
-    console.log(selectedMonth.slice(0, -1))
     const numberButton = (string: string | "", index: number) => (
         <Button
           key={index}

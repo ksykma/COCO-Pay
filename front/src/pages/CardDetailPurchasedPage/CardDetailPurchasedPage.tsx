@@ -55,8 +55,6 @@ const CardDetailPurchasedPage = () => {
         };
         CardPurchased.mutate(payload, {
             onSuccess: (data) => {
-                console.log(data)
-                console.log("야 된다??")
                 setCardPurchasedData(data);
             },
             onError: (error) => {

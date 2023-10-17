@@ -47,7 +47,6 @@ const AnimatedImage = styled(Image)`
 function OnboardingPage4(props: OnboardingPage4Props) {
   const { onNextPage } = props;
   const userInfo = useRecoilValue(userInfoState);
-  console.log(userInfo);
   const handlePageTransition = () => {
     // 페이지 이동 로직 추가
     onNextPage(); // 다음 페이지로 이동

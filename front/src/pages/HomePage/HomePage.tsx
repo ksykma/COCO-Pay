@@ -14,7 +14,7 @@ import {
   ScrollableContainer,
 } from "@/pages/HomePage/HomePage.styles";
 
-import { Checkbox } from "@/pages/Mypage/Mypage.styles";
+import { Checkbox1 } from "@/pages/Mypage/Mypage.styles";
 import BodyAndHeading from "@/components/molecules/BodyAndHeading/BodyAndHeading";
 import BlueContainer from "@/components/molecules/BlueContainer/BlueContainer";
 import BarcodeContainer from "@/components/molecules/BarcodeContainer.tsx/BarcodeContainer";
@@ -37,7 +37,6 @@ const HomePage = () => {
   const MainCards = useGetMainCards();
   const IsPurchased = useGetIsPurchased()
   const [isPurchased, setIsPurchased] = useRecoilState(IsPurchasedAtom)
-  console.log(IsPurchased, isPurchased)
   const [barcodeValue, setBarcodeValue] = useState("491731284377");
   const [resetTimerFlag, setResetTimerFlag] = useState(false);
   // TODO: 3분 만료랑 새로고침, 큐알....
@@ -119,7 +118,7 @@ const HomePage = () => {
               <Text size="small1" color="grey2" style={{ marginRight: "10px" }}>
                 QR
               </Text>
-              <Checkbox type="checkbox" id="toggle" />
+              <Checkbox1 type="checkbox" id="toggle" />
             </FlexDiv>
           </BarcodeUnderWrapper>
           <CircleIconContainer

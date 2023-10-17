@@ -27,11 +27,8 @@ const CardUploadCompletePage = () => {
     navigate(path);
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(isModalOpen);
   const CardUploadList = useGetUserCard();
-  console.log(CardUploadList);
   const [deleteCardId, setDeleteCardId] = useState(0);
-  console.log(deleteCardId)
   const queryClient = useQueryClient();
   const useDeleteCardMutation = useDeleteCard();
   const [priority, setPriority] = useRecoilState(priorityAtom)

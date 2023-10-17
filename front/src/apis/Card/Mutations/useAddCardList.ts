@@ -16,8 +16,7 @@ const usePostCard = () => {
 const usePostCardPurchased = () => {
     return useMutation((cardPurchased: PostCardPurchasedPayload) => postCardPurchased(cardPurchased), {
         onSuccess: (data) => {
-            console.log("야 usePostCardPurchased?");
-            console.log(data);
+            console.log("작성 완료");
             return data
         },
         onError: () => {

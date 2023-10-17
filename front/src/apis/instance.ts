@@ -1,7 +1,7 @@
 import axios, { Axios } from "axios";
 
 // const APP_SERVER_URL = "http://localhost:3000";
-const APP_SERVER_URL = "https://j9b208.p.ssafy.io"
+const APP_SERVER_URL = "https://j9b208.p.ssafy.io";
 
 const instance: Axios = axios.create({
   baseURL: `${APP_SERVER_URL}/api`,

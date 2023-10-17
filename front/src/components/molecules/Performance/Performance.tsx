@@ -38,7 +38,7 @@ const Performance = ({ data, dataType }: CardPerformanceProps) => {
               size="small2"
               fontWeight="bold"
               color="white"
-              style={{ textAlign: "center", lineHeight: "27px" }}
+              style={{ paddingLeft: "10px", lineHeight: "27px" }}
             >
               {cardData.nextLevel}
             </Text>
@@ -50,7 +50,7 @@ const Performance = ({ data, dataType }: CardPerformanceProps) => {
           <Level
             $bgc="blue"
             width={`calc(28px + ${
-              (225 * parseInt(offlineData.graphRate)) / 100
+              (175 * parseInt(offlineData.graphRate)) / 100
             }px)`}
             height="28px"
             $position="absolute"
@@ -61,7 +61,7 @@ const Performance = ({ data, dataType }: CardPerformanceProps) => {
               size="small2"
               fontWeight="bold"
               color="white"
-              style={{ paddingLeft: "10px", lineHeight: "26px" }}
+              style={{ paddingLeft: "10px", lineHeight: "27px" }}
             >
               {offlineData.nextPerLevel - 1}
             </Text>
@@ -71,7 +71,7 @@ const Performance = ({ data, dataType }: CardPerformanceProps) => {
               size="small2"
               fontWeight="bold"
               color="white"
-              style={{ textAlign: "center", lineHeight: "26px" }}
+              style={{ paddingLeft: "10px", lineHeight: "27px" }}
             >
               {offlineData.nextPerLevel}
             </Text>

@@ -40,7 +40,6 @@ interface StatisticsContentsProps {
 
 const StatisticsContents = ({ contents }: StatisticsContentsProps) => {
   const Amounts = contents;
-  console.log(Amounts, "Amounts");
   return (
     <Wrapper $alignItems="start" style={{ marginBottom: "100px" }}>
       {Amounts.map((category, index: number) => {

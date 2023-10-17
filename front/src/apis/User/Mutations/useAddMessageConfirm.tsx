@@ -19,7 +19,6 @@ const useAddMessageConfirm = () => {
       },
       onError: () => {
         console.log("인증번호 틀림");
-        // console.log()
       },
     }
   );

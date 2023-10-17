@@ -6,7 +6,6 @@ import React from "react";
 
 const ParticleMove = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
     await loadConfettiPreset(engine);
   }, []);
 

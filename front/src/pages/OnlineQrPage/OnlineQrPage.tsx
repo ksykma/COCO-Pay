@@ -9,7 +9,6 @@ import Button from '@/components/atoms/Button/Button';
 
 const OnlineQrPage = () => {
     const [isPurchased, setIsPurchased] = useState<boolean>(false);
-    console.log(isPurchased)
 
     useEffect(() => {
         // 로컬 스토리지의 변경을 감지하는 함수

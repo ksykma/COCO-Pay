@@ -28,9 +28,7 @@ const CardListPage = () => {
     navigate(path);
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(isModalOpen);
   const CardList = useGetCardList();
-  console.log(CardList);
   const [deleteCardId, setDeleteCardId] = useState(0);
   const queryClient = useQueryClient();
   const useDeleteCardMutation = useDeleteCard();

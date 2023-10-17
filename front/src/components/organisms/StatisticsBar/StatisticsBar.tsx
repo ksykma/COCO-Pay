@@ -16,7 +16,6 @@ interface StatisticsContentsProps {
 
 const StatisticsBar = ({ contents }: StatisticsContentsProps) => {
   const tempAmounts = contents;
-  console.log(tempAmounts, "왓니");
   return (
     <>
       <StatisticsBarWrapper>

@@ -12,7 +12,7 @@ import PriorityPage from "@/pages/PriorityPage/PriorityPage";
 import LoginFingerPage from "@/pages/LoginFingerPage/LoginFingerPage";
 import LoginPasswordPage from "@/pages/LoginPasswordPage/LoginPasswordPage";
 import HomePage from "@/pages/HomePage/HomePage";
-import PayOfflinePage from "@/pages/PayOfflinePage/PayOfflinePage";
+// import PayOfflinePage from "@/pages/PayOfflinePage/PayOfflinePage";
 import PayOffline from "@/pages/PayOfflinePage/PayOffline";
 import CardListPage from "@/pages/CardListPage/CardListPage";
 import ScanPage from "@/pages/ScanPage/ScanPage";

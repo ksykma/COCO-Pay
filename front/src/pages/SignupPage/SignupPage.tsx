@@ -84,7 +84,7 @@ const SignupPage: React.FC = () => {
   };
 
   useEffect(() => {
-    console.log(userInfo, "여기임?");
+    console.log(userInfo);
   }, [userInfo]);
 
   return (

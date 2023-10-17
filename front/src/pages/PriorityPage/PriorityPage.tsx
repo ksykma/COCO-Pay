@@ -32,6 +32,10 @@ const PriorityPage = () => {
     setSelectedBox(boxType);
   };
 
+  const handleSetPriority = () => {
+    localStorage.setItem('priority', JSON.stringify(clikedBtn))
+  }
+
   const prioritysave = () => {
     addUseAddPriority.mutate(clikedBtn);
     if (Priority === "upload") {
@@ -89,7 +93,7 @@ const PriorityPage = () => {
         $isGrayscale={selectedBox === "sale"} //performance를 누르면 sale 부분이 graybox로 바껴야 함.
       ></WhiteRoundedBox>
       <Button
-        onClick={prioritysave}
+        onClick={() => {prioritysave(); handleSetPriority();}}
         option="activated"
         size="medium"
       >

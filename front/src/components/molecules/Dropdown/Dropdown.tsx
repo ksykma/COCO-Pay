@@ -10,7 +10,6 @@ const CategoryDropDown = () => {
   const [IsOpen, setIsOpen] = React.useState<boolean>(false);
   const onToggle = () => setIsOpen(!IsOpen);
   const onOptionClicked = (value: string, index: number) => () => {
-    console.log(value);
     setIsOpen(false);
   };
 

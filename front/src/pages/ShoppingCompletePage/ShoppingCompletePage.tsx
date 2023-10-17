@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import { Image } from "@/components/atoms/Image/Image";
-import imgShoppingComplete from "@/assets/images/img-shopping-complete.png";
+import imgSamsungComplete from "@/assets/images/img-samsung-complete.png";
 
 
 const ShoppingCompletePage = () => {
@@ -13,7 +13,7 @@ const ShoppingCompletePage = () => {
 
     return (
         <div>
-          <Image src={imgShoppingComplete} width={100} $unit="%" />
+          <Image src={imgSamsungComplete} width={100} $unit="%" />
         </div>
     );
 }

@@ -50,7 +50,6 @@ const CardDetailPage = () => {
   const CardPurchased = usePostCardPurchased()
   const [month, setMonth] = useRecoilState(CardDetailMonthAtom)
   const [cardDetailId, setCardDetailId] = useRecoilState(CardDetailIdAtom)
-  console.log(CardDetail)
   const date = new Date();
 
   const handleMonthMinus = () => {
@@ -81,8 +80,6 @@ const CardDetailPage = () => {
       };
       CardPurchased.mutate(payload, {
           onSuccess: (data) => {
-              console.log(data)
-              console.log("야 된다??")
               setCardPurchasedData(data);
           },
           onError: (error) => {

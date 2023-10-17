@@ -19,7 +19,6 @@ const PayOfflinePage = () => {
     navigate(path);
   };
   const OfflinePayCard = useGetOfflinePay();
-  console.log(OfflinePayCard);
 
   // OfflinePayCard.remainingAmt를 numberToAmount 함수를 사용하여 변환합니다.
   const formattedRemainingAmt = numberToAmount(OfflinePayCard && OfflinePayCard.remainingAmt);

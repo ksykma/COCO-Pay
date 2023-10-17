@@ -12,7 +12,6 @@ function PayOnlinePage() {
     if (activatedNum < 3) {
       setActivatedNum((prevNum) => prevNum + 1 as keyof typeof PayOnlinePages);
     } else if (activatedNum === 3) {
-      console.log(activatedNum)
       setActivatedNum(3 as keyof typeof PayOnlinePages);
     }
   };

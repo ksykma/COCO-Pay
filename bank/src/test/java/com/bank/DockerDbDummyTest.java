@@ -12,6 +12,8 @@ import com.bank.card.entity.Card;
 import com.bank.card.entity.UserCard;
 import com.bank.card.repository.card.CardRepository;
 import com.bank.card.repository.usercard.UserCardRepository;
+import com.bank.card_history.entity.Category;
+import com.bank.card_history.entity.DiscountType;
 import com.bank.enumlist.BenefitList;
 import com.bank.enumlist.CardList;
 import com.bank.enumlist.PerformanceList;
@@ -201,15 +203,15 @@ public class DockerDbDummyTest {
 
         List<Account> accountList = new ArrayList<>();
 
-            for (Bank bank : findBankList) {
-                Account account = Account.builder()
-                        .num(faker.numerify("###-###-######"))
-                        .balance(1000000)
-                        .user(user)
-                        .bank(bank)
-                        .build();
-                accountList.add(account);
-            }
+        for (Bank bank : findBankList) {
+            Account account = Account.builder()
+                    .num(faker.numerify("###-###-######"))
+                    .balance(1000000)
+                    .user(user)
+                    .bank(bank)
+                    .build();
+            accountList.add(account);
+        }
 
         accountRepository.saveAll(accountList);
     }
@@ -253,6 +255,29 @@ public class DockerDbDummyTest {
                 .toList();
 
         performanceRepository.saveAll(list);
+    }
+
+    @Test
+    public void addBenefitOne() {
+        //카드 이름
+        String cardName = "노리2 (KB Pay)";
+        String storeName = "삼성온라인스토어";
+        //할인한도
+        int limit = 1000000;
+        //할인율
+        int discount = 5;
+        Card findCard = findCardByName(cardName);
+
+        Benefit newBenefit = Benefit.builder()
+                .card(findCard)
+                .storeName(storeName)
+                .category(Category.온라인쇼핑)
+                .limit(limit)
+                .discountType(DiscountType.페이백)
+                .discount(discount)
+                .build();
+
+        benefitRepository.save(newBenefit);
     }
 
     @Test

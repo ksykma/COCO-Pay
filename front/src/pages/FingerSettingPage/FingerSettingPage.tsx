@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Background } from "@/components/atoms/Background/Background.styles";
 import { Container } from "@/components/atoms/Container/Container.styles";
 import Back from "@/components/atoms/Back/Back";
@@ -8,8 +8,11 @@ import fingerPrint from "@/assets/images/img-fingerprint-blue.png";
 import Button from "@/components/atoms/Button/Button";
 import { useNavigate } from "react-router-dom";
 import { PATH } from "@/constants/path";
+import { ModalBg } from "@/components/atoms/Modal/Modal.styles";
 
 const FingerSettingPage = () => {
+  const [isDimmed, setIsDimmed] = useState(false);
+
   const navigate = useNavigate();
   const navigatePage = (path: string) => {
     navigate(path);
@@ -33,7 +36,15 @@ const FingerSettingPage = () => {
             지문 등록을 완료해주세요
           </Text>
           <Image src={fingerPrint} width={9} $margin="30px 0 50px 0"></Image>
-          <Button option="activated">인증하기</Button>
+          <Button
+            option="activated"
+            onClick={() => {
+              setIsDimmed(true);
+              window.ReactNativeWebView.postMessage("triggerBiometric");
+            }}
+          >
+            인증하기
+          </Button>
           <Button
             $border="none"
             style={{ marginBottom: "20px" }}
@@ -41,6 +52,7 @@ const FingerSettingPage = () => {
           >
             건너뛰기
           </Button>
+          {isDimmed && <ModalBg />}
         </Container>
       </Container>
     </Background>

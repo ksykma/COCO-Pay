@@ -3,9 +3,9 @@ import ParticleMove from "../PayOnlineCompletePage/ParticleMove";
 import { Container } from "@/components/atoms/Container/Container.styles";
 import { Text } from "@/components/atoms/Text/Text.styles";
 import { Image } from "@/components/atoms/Image/Image";
-import { Wrapper } from "@/components/atoms/Wrapper/Wrapper.styles";
+// import { Wrapper } from "@/components/atoms/Wrapper/Wrapper.styles";
 import loding from "@/assets/images/loading_pengin.png";
-import { Color } from "p5";
+// import { Color } from "p5";
 const TestPage = () => {
 
   return (
