@@ -44,13 +44,13 @@
 
 **[결과]**
 
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.46.36.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.46.57.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.47.15.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.47.49.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.49.15.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.49.38.png)
-![Alt text](/Image/스크린샷%202023-10-16%20오후%209.50.10.png)
+<img src="Image/스크린샷 2023-10-16 오후 9.46.36.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.46.57.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.47.15.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.47.49.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.49.15.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.49.38.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.50.10.png" width="45%">
 
 ## 📖 프로젝트 상세
 
@@ -61,25 +61,18 @@
 
 ### ✅ 주요 기능
 
-![Alt text](</Image/오프라인 결제.png>)
-
-![Alt text](</Image/온라인 결제.png>)
-
-![Alt text](/Image/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84.png)
+<img src="Image/오프라인 결제.png" width="30%">
+<img src="Image/온라인 결제.png" width="30%">
+<img src="Image/우선순위.png" width="30%">
 
 ### ✅ 그 외의 기능들
 
-![Alt text](</Image/본인인증 문자인증.png>)
-
-![Alt text](</Image/지문인식 로그인.png>)
-
-![Alt text](</Image/카드목록 및 삭제.png>)
-
-![Alt text](</Image/카드 상세.png>)
-
-![Alt text](</Image/카드 결제내역 상세.png>)
-
-![Alt text](/Image/%EB%A7%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80.png)
+<img src="Image/본인인증 문자인증.png" width="30%">
+<img src="Image/지문인식 로그인.png" width="30%">
+<img src="Image/카드목록 및 삭제.png" width="30%">
+<img src="Image/카드 상세.png" width="30%">
+<img src="Image/카드 결제내역 상세.png" width="30%">
+<img src="Image/마이페이지.png" width="30%">
 
 ### ✅ 아키텍쳐
 
@@ -89,9 +82,8 @@
 
 ### ERD (back, cocopay)
 
-![Alt text](</Image/스크린샷 2023-10-16 오후 9.10.28.png>)
-
-![Alt text](</Image/스크린샷 2023-10-16 오후 9.10.28-1.png>)
+<img src="Image/스크린샷 2023-10-16 오후 9.10.28.png" width="45%">
+<img src="Image/스크린샷 2023-10-16 오후 9.13.50 (1).png" width="45%">
 
 은행 API를 활용할 수 없는 환경이었기 때문에 은행 db를 직접 구현하여 결제 기능을 구현하였음
 
